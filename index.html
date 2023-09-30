@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="nav">
+                <ul>
+                    <li><a href="https://rhv5.github.io/portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="handlebox">
+                <div class="titlebox">
+                    <label for="input" id="inp">UTF-8</label>
+                    <label class="fa-solid fa-arrow-right"></label>
+                    <label for="output" id="outp">MODE</label>
+                </div>
+
+                <div class="handle-section">
+                    <textarea name="input" id="input"></textarea>
+                    <textarea name="output" id="output" readonly></textarea>
+                </div>
+
+                <div class="controls-handle">
+                    <div id="mode-title"><strong>MODE:</strong></div>
+                    <div class="radio-box">count char <input type="radio" name="mode" id="mode1" checked></div>
+                    <div class="radio-box">EnCode <input type="radio" name="mode" id="mode2"></div>
+                    <div class="radio-box">DeCode <input type="radio" name="mode" id="mode3"></div>
+                    <div class="radio-box"><button onclick="copy()">Copy</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="copyright">
+                <i class="fa-solid fa-copyright"></i>RHV5 2023
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

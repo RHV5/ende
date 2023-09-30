@@ -1,0 +1,104 @@
+/* ==== Reset ==== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --main-color: #2f82b3;
+    --nav-height: 8px;
+}
+body{
+    background: #f4f4f4;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+/* ==== End Reset ==== */
+/* ==== Header ==== */
+    /* ==== Nav ==== */
+    #nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-bottom: 1px solid var(--main-color);
+    }
+    #nav ul{
+        display: inline-block;
+    }
+    #nav li{
+        display: inline-block;
+        padding: var(--nav-height) calc(var(--nav-height)*2);
+    }
+    #nav ul li:hover{
+        background: #00000022;
+    }
+    /* ==== Nav ==== */
+/* ==== Header ==== */
+/* ==== Main ==== */
+#main{
+    margin: calc(var(--nav-height)*8) auto;
+    background: #fff;
+    width: 1000px;
+    padding: calc(var(--nav-height)*4);
+}
+.titlebox label{
+    display: block;
+    width: calc(100%/3);
+    float: left;
+    text-align: center;
+}
+.handle-section textarea{
+    padding: 8px 16px;
+    font-size: large;
+    resize: none;
+    width: 50%;
+    height: 22vh;
+    float: left;
+    border-radius: 4px;
+}
+.handle-section textarea:last-child{
+    background: #f8f8f8;
+}
+.radio-box{
+    width: 25%;
+    float: left;
+}
+.radio-box:last-child button{
+    width: 100%;
+}
+/* ==== End Main ==== */
+@media (max-width: 999px){
+    #main{
+        width: 100%;
+    }
+    .handle-section textarea{
+        width: 100%;
+        float: none;
+    }
+}
+@media (max-width: 650px){
+    .radio-box{
+        padding: 4px;
+        width: 100%;
+        float: none;
+    }
+}
+/* Footer */
+#copyright{
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: var(--nav-height);
+}
+#copyright i{
+    padding-right: var(--nav-height);
+}
+/* End Footer */
